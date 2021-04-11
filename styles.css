@@ -20,19 +20,20 @@ div.logo {
     color: #bcc3c7;
 }
 
-ul.nav-links {
+ul .nav-links {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-ul li {
+ul li a{
+    display: flex;
     margin: 0 2vw;
     list-style: none;
     font-size: 1.1rem;
-}
-
-ul li a {
+ }
+ 
+ ul li a {
     text-decoration: none;
     color: #88949B;
     padding: 0.5vw;
@@ -42,6 +43,40 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
+}
+
+
+@media screen and (max-width: 700px){
+    
+div.nav-bar {
+    padding: 1rem 2rem;
+}
+
+div.logo {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 25px;
+    cursor: pointer;
+    background-color: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger: before, {
+    content: "";
+    display: block;
+    width: 100%;
+    min-height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
 }
 
 div.hero-section {
@@ -87,13 +122,27 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
-div.hero-background {
-    background: #f0f0f0;
-    padding: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media screen and (max-width: 700px){
+    div.hero-section {
+        padding: 2rem;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+    
+    div.hero-content-heading p {
+        font-size: 0.8rem;
+        font-weight: 200;
+    }
+    
+    div.hero-content-btn {
+        padding-top: 1rem;
+    }
 }
+
 
 div.background {
     background: #fff;
@@ -103,7 +152,13 @@ div.background {
     height: 220px;
     position: relative;
 }
-
+div.hero-background {
+    background: #f0f0f0;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
 div.background h4 {
     padding: 2rem;
     color: #555657;
@@ -208,6 +263,64 @@ div.box1 h5 {
     font-size: 1rem;
 }
 
+
+@media screen and (max-width: 700px){
+    div.hero-background {
+        padding: 2rem;
+    }   
+    div.background {
+        padding: 0.5rem;
+        width: 350px;
+        height: 220px;
+    }
+    div.background h4 {
+        padding: 1rem;
+    }
+    
+    div.background p {
+        padding-left: 1rem;
+    }
+    
+    div.hero-background-pos {
+        width: 110px;
+        height: 110px;
+    }
+    
+    div.snapshot-team h2 {
+        font-size: 1.2rem;
+    }
+    
+    div.snapshot-team p {
+        font-size: 0.8rem;
+    }
+    
+    div.snapshot-box {
+        padding: 2rem;
+    }
+    
+    div.box1 {
+        padding: 5px 10px;
+        width: 150px;
+        height: 200px;
+        margin: 5px;
+    }
+    
+    div.box3 {
+        padding: 5px 10px;
+        width: 150px;
+        height: 200px;
+        margin: 5px;
+    }
+    
+    div.box3 h5 {
+        font-size: 0.8rem;
+    }
+    
+    div.box1 h5 {
+        font-size: 0.8rem;
+    }
+}
+
 div.gallery-section {
     background: #fff;
     padding: 4rem;
@@ -247,6 +360,24 @@ div.img img {
     height: 180px;
 }
 
+@media screen and (max-width: 700px){
+    div.gallery-section {
+        padding: 2rem;
+    }
+    
+    div.gallery-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    div.gallery-content p {
+        font-size: 0.8rem;
+    }
+    
+    div.img img {
+        width: 250px;
+        height: 150px;
+    }
+}
 div.footer {
     background: #304353;
     padding: 3rem;
@@ -344,4 +475,44 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width: 700px){
+    div.footer {
+        padding: 2rem;
+    }
+    
+    div.footer-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    div.footer-content p {
+        font-size: 0.8rem;
+    }
+    
+    div.footer-input {
+        padding-top: 2rem;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    
+    input[type="email"] {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+     
+    div.footer-btn a {
+        padding: 10px 10px;
+    }
+    
+    div.footer h6 {
+        font-size: 0.8rem;
+    }   
 }
